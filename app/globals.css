@@ -1,0 +1,227 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font declarations follow below */
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("https://cms.homio.com.br/assets/9f525e0d-3fb0-47f3-b746-1bae0d6624ab") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("https://cms.homio.com.br/assets/d03ee2f4-e9e8-45e1-87c2-c8c451a05679") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("https://cms.homio.com.br/assets/9af4d772-74e9-4506-971d-aa070f5994e8") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("https://cms.homio.com.br/assets/a8656cb7-256a-49fb-9fe4-518bceec2066") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("https://cms.homio.com.br/assets/d03ee2f4-e9e8-45e1-87c2-c8c451a05679") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("https://cms.homio.com.br/assets/927a80e7-c694-43d3-a7e8-86c77f3d88bd") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("https://cms.homio.com.br/assets/c126b169-3a85-4f35-a4d2-2de6f065bf67") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("https://cms.homio.com.br/assets/61cd06bb-e0ea-448f-ac32-1ce89d8a905e") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* General styling */
+.replacement-body {
+  background: linear-gradient(
+      120deg,
+      rgba(1, 135, 254, 0.4),
+      rgba(179, 76, 252, 0.2),
+      rgba(139, 59, 196, 0.4),
+      rgba(3, 109, 203, 0.2),
+      rgba(25, 25, 25, 0.1)
+    ), #ffffff;
+  background-size: 200% 200%;
+  animation: auroraAnimation 10s ease infinite;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Helvetica Now Display", sans-serif;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Animated gradient */
+@keyframes auroraAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Centered container */
+.container {
+  text-align: center;
+}
+
+/* Button style */
+.btn {
+  margin: 1rem;
+  border: none;
+  border-radius: 12px;
+  padding: 0.75rem 1.5rem;
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  background: linear-gradient(90deg, #0187fe, #b34cfc);
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.reconect {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Connected text */
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* Popup */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  z-index: 1001;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup img {
+  width: 400px;
+  height: 400px;
+  margin: 1rem;
+  object-fit: contain;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Close button */
+.popup-close-button {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  background: rgba(255, 255, 255, 0.4);
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 1002;
+  font-size: 16px;
+  font-weight: bold;
+  color: #191919;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.popup-close-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.popup-close-button:active {
+  transform: scale(0.9);
+}
+
+.wellcome-text {
+  color: rgba(25, 25, 25);
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+/* Instance status */
+.instance-status {
+  border: 1px solid #a7a7a7;
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.message {
+  font-weight: 600;
+}
+
+.loading-message {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #333;
+}
