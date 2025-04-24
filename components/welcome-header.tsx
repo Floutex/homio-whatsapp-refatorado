@@ -1,4 +1,3 @@
-// Welcome header component
 interface WelcomeHeaderProps {
   text: string
 }

@@ -1,4 +1,3 @@
-// Loading message component
 interface LoadingMessageProps {
   message: string
 }

@@ -1,6 +1,5 @@
 "use client"
 
-// Connect button component
 interface ConnectButtonProps {
   onClick: () => void
   label: string

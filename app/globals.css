@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Font declarations follow below */
 @font-face {
   font-family: "Helvetica Now Display";
   src: url("https://cms.homio.com.br/assets/9f525e0d-3fb0-47f3-b746-1bae0d6624ab") format("woff2");
@@ -65,7 +64,6 @@ body {
   padding: 0px;
 }
 
-/* General styling */
 .replacement-body {
   background: linear-gradient(
       120deg,
@@ -88,7 +86,6 @@ body {
   justify-content: center;
 }
 
-/* Animated gradient */
 @keyframes auroraAnimation {
   0% {
     background-position: 0% 50%;
@@ -101,12 +98,10 @@ body {
   }
 }
 
-/* Centered container */
 .container {
   text-align: center;
 }
 
-/* Button style */
 .btn {
   margin: 1rem;
   border: none;
@@ -137,14 +132,12 @@ body {
   font-weight: 600;
 }
 
-/* Connected text */
 h1 {
   font-size: 28px;
   font-weight: 700;
   color: #ffffff;
 }
 
-/* Popup */
 .popup {
   position: fixed;
   top: 50%;
@@ -170,7 +163,6 @@ h1 {
   border-radius: 5px;
 }
 
-/* Close button */
 .popup-close-button {
   position: absolute;
   top: -40px;
@@ -207,7 +199,6 @@ h1 {
   font-weight: 700;
 }
 
-/* Instance status */
 .instance-status {
   border: 1px solid #a7a7a7;
   border-radius: 15px;

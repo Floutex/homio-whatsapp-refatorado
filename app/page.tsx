@@ -10,10 +10,7 @@ export default function WhatsAppConnection() {
     id: "",
   })
 
-  // Initialize data from DOM elements
   useEffect(() => {
-    // In a real Next.js app, this would come from props or API
-    // For demo purposes, we're simulating the original behavior
     const nameElement = document.getElementById("instancename")
     const idElement = document.getElementById("locationId")
 
@@ -25,7 +22,6 @@ export default function WhatsAppConnection() {
       setLocationInfo((prev) => ({ ...prev, id: idElement.innerText }))
     }
 
-    // For demo purposes, set some default values if not found
     if (!nameElement || !idElement) {
       setLocationInfo({
         name: "Demo Location",
@@ -36,7 +32,6 @@ export default function WhatsAppConnection() {
 
   return (
     <>
-      {/* Hidden elements for data storage (simulating the original HTML) */}
       <div id="instancename" style={{ display: "none" }}>{`{{location.name}}`}</div>
       <div id="locationId" style={{ display: "none" }}>{`{{location.id}}`}</div>
 

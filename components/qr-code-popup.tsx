@@ -1,6 +1,5 @@
 "use client"
 
-// QR code popup component
 import Image from "next/image"
 import { X } from "lucide-react"
 

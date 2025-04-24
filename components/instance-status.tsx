@@ -1,6 +1,5 @@
 "use client"
 
-// Instance status component
 import { ConnectButton } from "./ui/connect-button"
 
 interface InstanceStatusProps {
